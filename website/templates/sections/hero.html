@@ -1,0 +1,57 @@
+<section class="hero hero-homepage with-newsletter-form">
+    <div class="container-2021">
+        <div class="image-wrapper">
+            <div id="hero-image-slider" class="slider">
+                <div class="slide">
+                    <img class="big animate__animated" src="https://cdn-txweb.transifex.com/wp-content/uploads/2022/02/TX_Homepage_Webapp_desktop.png" alt="TX_Homepage_Webapp_desktop" />
+                    <img class="small animate__animated" src="https://cdn-txweb.transifex.com/wp-content/uploads/2022/02/TX_Homepage.png" alt="tx_homepage_mobile_app" />
+                </div>
+                <div class="slide">
+                    <img class="big animate__animated" src="https://cdn-txweb.transifex.com/wp-content/uploads/2022/02/TX_Homepage_Gaming_desktoppng.png" alt="TX_Homepage_Gaming_desktoppng" />
+                    <img class="small animate__animated" src="https://cdn-txweb.transifex.com/wp-content/uploads/2022/02/TX_Homepage_Gaming_mobile.png" alt="TX_Homepage_Gaming_mobile" />
+                </div>
+                <div class="slide">
+                    <img class="big animate__animated" src="https://cdn-txweb.transifex.com/wp-content/uploads/2022/02/tx_homepage_helpcenter_desktop.png" alt="tx_homepage_helpcenter_desktop" />
+                    <img class="small animate__animated" src="https://cdn-txweb.transifex.com/wp-content/uploads/2022/02/tx_homepage_helpcenter_mobile.png" alt="tx_homepage_helpcenter_mobile" />
+                </div>
+                <div class="slide">
+                    <img class="big animate__animated" src="https://cdn-txweb.transifex.com/wp-content/uploads/2022/02/TX_Homepage_07.png" alt="tx_homepage_website" />
+                    <img class="small animate__animated" src="https://cdn-txweb.transifex.com/wp-content/uploads/2022/02/TX_Homepage_08.png" alt="tx_homepage_mobile" />
+                </div>
+            </div>
+        </div>
+        <div class="texts-wrapper">
+            <h1 class="title">Content management for</h1>
+            <div class="subtitle">
+                <div id="hero-subtitle-slider" class="slider">
+                    <div class="slide">Web & Mobile Apps</div>
+                    <div class="slide">Gaming & Interactive Apps</div>
+                    <div class="slide">Help Centers & Documentation</div>
+                    <div class="slide">Websites & Blogs</div>
+                </div>
+            </div>
+            <div class="form-wrapper">
+                <form class="s-hs-form hero-register-form" accept-charset="UTF-8" method="GET" action="/">
+                    <div class="hs-form-field">
+                        <input type="email" name="email" placeholder="Your email adress" autocomplete="off" required />
+                    </div>
+                    <div class="hs-submit">
+                        <input type="submit" value="START FOR FREE" />
+                    </div>
+                </form>
+            </div>
+            <div class="bottom-info">
+                <div class="info">{{ trial_days }} days free trial</div>
+                <div class="info">No credit card required</div>
+                <div class="info">Full access &support</div>
+                <div class="info">
+                {% if num_integrations > 1 %}
+                {{ num_integrations }} available integrations
+                {% else %}
+                {{ num_integrations }} available integration
+                {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+ </section>
