@@ -11,6 +11,10 @@
     <link rel='stylesheet' id='additions-css'  href='https://cdn-txweb.transifex.com/wp-content/themes/transifex/assets/dist/css/additions.1.4.12.css' type='text/css' media='all' />
     <script type='text/javascript' src='https://cdn-txweb.transifex.com/wp-includes/js/jquery/jquery.min.js?ver=3.6.0' id='jquery-core-js'></script>
     <script type='text/javascript' src='https://cdn-txweb.transifex.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script>
+    {% if live_token %}
+    <script type="text/javascript">window.liveSettings={api_key:"{{ live_token }}"};</script>
+    <script type="text/javascript" src="//cdn.transifex.com/live.js"></script>
+    {% endif %}
 </head>
 <body class="home page-template page-template-templates page-template-multiple-sections-new page-template-templatesmultiple-sections-new-php page page-id-37333">
     <div class="c-body-content js-body-content">

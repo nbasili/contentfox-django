@@ -20,5 +20,6 @@ from website.views import homepage
 
 urlpatterns = [
     path('', homepage),
+    path('live/<token>/', homepage),
     path('admin/', admin.site.urls),
 ]
